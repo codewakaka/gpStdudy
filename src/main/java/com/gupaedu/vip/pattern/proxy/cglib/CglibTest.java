@@ -8,10 +8,9 @@ package com.gupaedu.vip.pattern.proxy.cglib;
 public class CglibTest {
     public static void main(String[] args) {
         try {
-            Zs instance = (Zs)new CglibMp().getInstance(new Zs().getClass());
+            Zs instance = (Zs)new CglibMp().getInstance(Zs.class);
             instance.findLov();
             System.out.println("==================");
-
             //System.out.println(instance);
         } catch (Exception e) {
             e.printStackTrace();
