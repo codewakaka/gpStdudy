@@ -16,7 +16,7 @@ public class CustomMp implements GpInvocationHandler {
     public Object getInstance(Person target) throws Exception {
         this.target = target;
         Class<? extends Person> clazz = target.getClass();
-        return GpProxy.newProxyInstance(new GpClassLoad(), clazz.getInterfaces(), this::invoke);
+        return GpProxy.newProxyInstance(new GpClassLoad(), clazz.getInterfaces(), this);
     }
 
     @Override
