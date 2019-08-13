@@ -16,7 +16,7 @@ import java.util.List;
  * @date ：Created in 2019/8/9 22:04
  */
 public class MemberDao {
-
+    //不继承是为了解耦
     private JdbcTemplate jdbcTemplate = new JdbcTemplate(null);
 
     public List<?> query() {
